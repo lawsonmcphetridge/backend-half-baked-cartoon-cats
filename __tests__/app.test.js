@@ -1,7 +1,9 @@
 const request = require('supertest');
 const app = require('../lib/app');
 
-const { cats } = require('../lib/cats');
+
+const { cats } = require('../lib/cats-data');
+
 
 describe('cats routes', () => {
   it('/cats should return a list of cats', async () => {
